@@ -1,0 +1,26 @@
+{
+  "name": "cat",
+  "version": "0.0.1",
+  "description": "simple cat action for GitHub Actions",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "ncc build -o dist/ src/index.ts && git add -f dist/"
+  },
+  "keywords": [
+    "cat"
+  ],
+  "author": "pCYSl5EDgo",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.0",
+    "@actions/exec": "^1.0.1",
+    "@actions/io": "^1.0.1",
+    "os": "^0.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.3",
+    "@zeit/ncc": "^0.20.5",
+    "typescript": "^3.5.1"
+  }
+}

@@ -1,0 +1,16 @@
+name: 'Cat'
+description: 'cat command like action'
+author: 'pCYSl5EDgo'
+inputs:
+  path:
+    description: 'A file to read'
+    required: true
+outputs:
+  text:
+    description: 'A file content read from path'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: 'archive'
+  color: 'gray-dark'
