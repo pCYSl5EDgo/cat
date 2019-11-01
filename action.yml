@@ -1,4 +1,4 @@
-name: 'Cat'
+name: 'Cat for GitHub Actions'
 description: 'cat command like action'
 author: 'pCYSl5EDgo'
 inputs:
