@@ -18,7 +18,9 @@ function getAbsolutePath(inputFilePath: string): string {
 async function run() {
     const path = getAbsolutePath(core.getInput("path", { required: true }));
     core.debug("Path : " + path);
-    const text = fs.readFileSync(path, {encoding: "utf8"});
+    const text = core.getInput("trim") === 'true' ?
+        fs.readFileSync(path, {encoding: "utf8"}).trim() :
+        fs.readFileSync(path, {encoding: "utf8"}) ;
     core.debug("Text : " + text);
     core.setOutput("text", text);
 }
