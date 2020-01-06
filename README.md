@@ -10,6 +10,7 @@ Create a workflow `.yml` file in your repositories `.github/workflows` directory
 ### Inputs
 
 * `path` - A file to read from
+* `trim` - Remove whitespace from both ends of a string when true. Default is false.
 
 ### Outputs
 
