@@ -13,7 +13,7 @@
   "author": "pCYSl5EDgo",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.2.6",
+    "@actions/core": "^1.9.1",
     "@actions/exec": "^1.0.1",
     "@actions/io": "^1.0.1",
     "os": "^0.1.1"
