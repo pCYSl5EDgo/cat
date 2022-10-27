@@ -12,7 +12,7 @@ outputs:
   text:
     description: 'A file content read from path'
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/index.js'
 branding:
   icon: 'archive'
